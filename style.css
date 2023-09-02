@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:"Poppins" , sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background:url("hacker-1944688_1280.jpg");background-repeat:no-repeat;background-position:center;background-size:cover;background-attachment:fixed;
+}
+.container{
+    position: fixed;
+    width: 400px;
+    box-shadow:0 30px 20px rgba(0,0,0,0.8);
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.945);
+    border-radius: 50%;
+}
+.box{
+    padding: 2rem;
+}
+.psw{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 15px;
+   width: 220px;
+   height:50px;
+   color:black;
+   background-color:rgba(255, 255, 255, 0.589);
+   border-radius: 40px;
+   margin-left: 8vh;
+   border: 2px solid deepskyblue;
+}
+.list{
+    padding: 0 1rem 1rem;
+}
+.li{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    
+}
+.li>input[type=checkbox]{
+    cursor: pointer;
+}
+.li>input[type=number]{
+    cursor: auto;
+}
+.generate{
+    display: block;
+    background-color:lightblue;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12vh;
+    margin-top: 1rem;
+    padding: 1em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em rgb(110,237,237);
+    background-color: rgb(44,157,157);
+    border: 0.25em solid rgb(110,237,237);
+    border-radius: 1em;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 0 0 1em 0.25em rgb(110,237,237),0 0 4em 1em rgb(65,243,243,0.781),inset 0 0 0.75em 0.25em rgb(110,237,237);
+}
+button:hover{
+    color: rgb(44,157,157);
+    background-color: rgb(110,237,237);
+    box-shadow: 0 0 1em 0.25em rgb(110,237,237),0 0 4em 2em rgb(65,243,243,0.781),inset 0 0 0.75em 0.25em rgb(110,237,237);
+
+}
+button:active{
+    box-shadow: 0 0 0.6em 0.25em rgb(110,237,237), 0 0 2.5em 2em rgb(65,243,243,0.781), inset 0 0 0.5em 0.27em rgb(110,237,237);
+}
+button::after{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(65,243,243,0.781);
+    filter: blur(2em);
+    opacity: 0.7;
+    pointer-events: none;
+    transform: perspective(1.5em) rotateX(35deg) scale(1,0.6);
+}
